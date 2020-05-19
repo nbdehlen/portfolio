@@ -1,56 +1,130 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/switch.css">
-    <title></title>
-</head>
-<body>
-    <div class="menu-container">
-    <nav class="nav">
-        <ul class="ul">
-            <li class="li-ib">About</li>
-            <li class="li-ib">Portfolio</li>
-        </ul>
-    </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/switch.css" />
+        <link rel="stylesheet" href="style/lang.css" />
+        <title>Bastian Dehlén</title>
+    </head>
+    <body>
+        <!--<div class="menu-container">
+            <nav class="nav">
+                <ul class="ul">
+                    <li class="li-ib">About</li>
+                    <li class="li-ib">Portfolio</li>
+                </ul>
+            </nav>
+          </div>-->
+        
+           
+            
+      
 
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-    </div>
+        <div class="switch-container theme-text">
 
-    <div class="about-container">
-     
-          <header>
-              <h1>Fullstack Web Developer</h1>
-          </header>
+            <label for="lang-toggle" id="lang-label">
+                <input id="lang-toggle" name="lang-toggle" type="checkbox"/>
+                <span id="lang-span"></span>
+            </label>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+            >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path class="theme-fill"
+                    d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79zM1 10.5h3v2H1zM11 .55h2V3.5h-2zm8.04 2.495l1.408 1.407-1.79 1.79-1.407-1.408zm-1.8 15.115l1.79 1.8 1.41-1.41-1.8-1.79zM20 10.5h3v2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-1 4h2v2.95h-2zm-7.45-.96l1.41 1.41 1.79-1.8-1.41-1.41z"
+                />
+            </svg>
 
-          <section>
-            <article>
-                <h2>About me</h2>  
-              </article>
+            <!-- <div> -->
+            <label class="theme-toggle">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+            </label>
+            <!-- </div> -->
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+            >
+                <path d="M0 0h24v24H0V0z" fill="none"/>
+                <path class="theme-fill"
+                    d="M10 4c4.41 0 8 3.59 8 8s-3.59 8-8 8c-.34 0-.68-.02-1.01-.07C10.9 17.77 12 14.95 12 12s-1.1-5.77-3.01-7.93C9.32 4.02 9.66 4 10 4m0-2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"
+                />
+            </svg>
+        </div>
 
-              <article>
-                <h3>whatever</h3>
-              </article>
-          </section>
-    </div>
+        <div class="about-container theme-text">
+            <header>
+                <div lang="en">
+                    <h1 data-key="hi">DEFAULT</h1>
+                </div>
 
-    <div class="project-container">
-          <section class="project-section">
-              <article class="project-article">Article 1</article>
-              <article class="project-article">Article 2</article>
-              <article class="project-article">Article 3</article>
-              <article class="project-article">Article 4</article>
-              <article class="project-article">Article 5</article>
-              <article class="project-article">Article 6</article>
-          </section>
-    </div>
-   
-</body>
+                <div lang="sv">
+                    <h1 data-key="hi">DEFAULT</h1>
+                </div>
+            </header>
+            <div lang="en">
+                <p data-key="intro">DEFAULT</p>
+            </div>
+            <div lang="sv">
+                <p data-key="intro">DEFAULT</p>
+            </div>
+            <section>
+                <div class="image-container">
+                    <img
+                        id="profile-image"
+                        src="https://cdn.pixabay.com/photo/2014/11/09/23/32/boy-524512_960_720.jpg"
+                        alt="profile"
+                    />
+                </div>
+                <article>
+                    <h2>About me</h2>
+                </article>
+
+                <article>
+                    <h3>whatever</h3>
+                </article>
+            </section>
+        </div>
+
+        <div class="project-container">
+            <section class="project-section">
+                <article class="project-article">
+                    <h4 class="project-header">Project 1</h4>
+                    <img
+                        src="http://www.diablo3artisans.com/wp-content/uploads/2012/05/templar-spec.png"
+                        alt=""
+                        class="project-image"
+                    />
+
+                    <p>Date: 3rd April 2019</p>
+                    <p>Project length: 3 weeks</p>
+                    <p>Project Size: 3 People</p>
+                    <p>Tech stack: React, Material-UI, SocketIO</p>
+                    <p>
+                        Issues I ran into and how I solved them: We had issues
+                        setting up Sequelize lorem ipsum whatever blabla
+                    </p>
+                    <a href="#">Live version</a>
+                    <a href="#">Github</a>
+                </article>
+                <article class="project-article">Article 2</article>
+                <article class="project-article">Article 3</article>
+                <article class="project-article">Article 4</article>
+                <article class="project-article">Article 5</article>
+                <article class="project-article">Article 6</article>
+            </section>
+        </div>
+        <script type="text/javascript" src="./script/main.js" type></script>
+        <script type="text/javascript" src="./script/darkmode.js" type></script>
+        <script type="text/javascript" src="./script/lang.js" type></script>
+    </body>
 </html>
