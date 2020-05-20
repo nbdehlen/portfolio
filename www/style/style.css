@@ -1,18 +1,25 @@
 * {
     box-sizing: border-box;
-    /* width: 100%; */
-  }
+    font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
   :root {
     --clr-light: #fafafa;
     --clr-dark: #171C28;
-    --clr-primary: #dbffa2;
-    --clr-secondary: #c3fcf2;
+    --clr-dark-2: rgb(104, 104, 104);
+    --clr-primary: #e2e2e2;
+    --clr-secondary: #ececec;
+    --clr-tertiary: #ececec;
     --clr-accent: #ff7750;
   
     --foreground: var(--clr-dark);
+    --foreground-2: var(--clr-dark-2);
     --background: var(--clr-light);
-    
+    --alt-color: var(--clr-primary);
+    --alt-color-2: var(--clr-secondary);
+    --alt-color-3: var(--clr-tertiary)
   }
 
 body {
@@ -23,13 +30,19 @@ body {
 
 .darkmode {
     --clr-light: #fafafa;
+    --clr-light-2: #dddddd;
     --clr-dark: #171C28;
-    --clr-primary: #202302;
-    --clr-secondary: #00100d;
+    --clr-primary: #4b4b4b;
+    --clr-secondary: #333;
+    --clr-tertiary: #919191;
     --clr-accent: #ff7750;
-  
+
     --foreground: var(--clr-light);
+    --foreground-2: var(--clr-light-2);
     --background: var(--clr-dark);
+    --alt-color: var(--clr-primary);
+    --alt-color-2: var(--clr-secondary);
+    --alt-color-3: var(--clr-tertiary)
    
   }
 
@@ -88,23 +101,150 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 .project-header {
     text-align: center;
+    margin: 10px 0;
+    font-size: 1.4rem;
 }
 
  .project-article {
      width: 400px;
-     min-height: 600px;
-     background-color: grey;
+    height: 600px; 
+     /* max-height: 900px; */
+     /* background-color: grey; */
      margin: 1rem;
      border-radius: 1rem;
      text-align: flex-start;
+     /* filter: drop-shadow(0 0 0.25rem var(--foreground)); */
+     /* border: 1px solid var(--foreground); */
+     /* border: 1px solid #007bff; */
+     /* filter: drop-shadow(0 0 0.55rem #007bff); */
+     /* box-shadow: 0 0 8px #007bff; */
+   /* background: var(--alt-color); */
+   /* border: 1px solid var(--alt-color); */
+   box-shadow: 0 0 0.8rem var(--alt-color);
+   color: var(--foreground-2);
  }
+ 
+.project-article:hover {
+   
+}
+
+.project-bottom-container {
+    
+}
 
  .project-image {
      padding: 0.3rem;
      width: 100%;
      height: auto;
+     display: flex;
+     /* filter: grayscale(50%); */
+    
+     border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    height: 50%;
+    /* box-shadow: 0 12px 12px -2px grey; */
+   
+    
  }
+
+ .project-image:hover {
+   
+ }
+
+
+ #project-image-1 {
+    background-image: url("http://www.diablo3artisans.com/wp-content/uploads/2012/05/templar-spec.png");
+ }
+
+ #project-image-2 {
+ background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+ }
+
+ .project-info-container {
+    display: flex;
+    justify-content: space-around;
+    /* color: #007bff; */
+     font-family: Inconsolata,monospace;
+     font-weight: 400;
+     margin-top: 10px;
+     
+}
+
+.project-info {
+
+}
+
+ 
+
+.project-tech-container {
+    display: flex;
+    /* background-color: var(--background); */
+    padding: 0 10px;
+}
+
+ .project-tech {
+        /* border: 1px solid var(--foreground); */
+        /* border: 1px solid #007bff; */
+        /* color: var(--foreground); */
+        /* color: rgb(153, 153, 153); */
+        font-size: 1rem;
+   
+        /* color: #007bff; */
+        /* font-family: Inconsolata,monospace; */
+        font-weight: 500;
+        /* text-decoration: none; */
+        padding: 4px;
+        margin: 15px 3px;
+        border-radius: 5px;
+        /* color: var(--clr-light); */
+        /* background-color: var(--alt-color-2); */
+        border: 1px solid #5baaff;
+        color: #5baaff;
+
+ }
+
+.article-text {
+    padding: 0px 5px;
+}
+
+ .project-link-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project-link {
+    /* border: 1px solid var(--foreground); */
+    /* border: 1px solid #007bff; */
+    /* color: var(--foreground); */
+   /* color: var(--foreground); */
+    /* color: #007bff; */
+    /* font-family: Inconsolata,monospace; */
+    /* font-weight: 700;  */
+    text-decoration: none;
+     padding: 5px;
+    margin: 10px 5px;
+    /* border-radius: 5px; */
+}
+
+.project-link:hover {
+     /* border: 1px solid #5baaff; */
+    /* color: #5baaff; */
+    
+}
+
+.project-link-svg {
+    fill: #007bff;
+    width: 28px;
+    height: 28px;
+    
+}
+
+
+.project-link-svg:hover {
+    fill: #004794;
+}

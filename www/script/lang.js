@@ -21,15 +21,15 @@ const langData = {
     
     //Check localStorage on init
     if (langLocalStorage === "en") {
-        localStorage.setItem("lang", "en");
+        localStorage.setItem("lang", "In Swedish");
     
         if(langToggle.checked === false) {
             langToggle.click();
-            langSpan.textContent = "SE";
+            langSpan.textContent = "In English";
         } 
     } else {
         localStorage.setItem('lang', 'sv')
-        langSpan.textContent = "EN";
+        langSpan.textContent = "In English";
     }
     
 
@@ -38,10 +38,10 @@ const langData = {
     
         if (langLocalStorage !== "en") {
             localStorage.setItem("lang", "en");
-            langSpan.textContent = "SE";
+            langSpan.textContent = "In Swedish";
         } else {
             localStorage.setItem("lang", "sv");
-            langSpan.textContent = "EN";
+            langSpan.textContent = "In English";
         }
         setLocale();
     })

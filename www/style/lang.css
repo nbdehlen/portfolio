@@ -12,7 +12,7 @@ div[lang].lang-match {
     top: 0px;
     left: 0px;
     text-decoration: underline;
-    font-size: 21px;
+    /* font-size: 21px; */
     margin: 10px;
 }
 
