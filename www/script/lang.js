@@ -1,18 +1,78 @@
 const langData = {
     en: {
         strings: {
-            hi: "Hi",
-            intro: "I'm Bastian Dehlén, a student at Chas Academy - Fullstack Web developer",
-            about: "I've always liked coding and so on"
+            hi: "Hello!",
+            intro: "I'm Bastian Dehlén, a Fullstack Web developer student at Chas Academy in Stockholm.",
+            about: "I've always liked coding and so on",
+
+            skillsIntro: "I'm a believer in the right tools for the job and am always up for learning new tech-related skills or improve the ones I'm already familiar with.",
+            skillsExp: "EXPERIENCE WITH:",
+
+            languages: "LANGUAGES",
+            frameworks: "FRAMEWORKS",
+            tools: "TOOLS",
+
+            projectHeader: "PROJECTS:",
+            projectInProgress: "picture overlay goes here",
+
+            projectDate1: "5th May 2020",
+            projectSize1: "Group",
+            projectTitle1: "Meetingplace for developers",
+            projectDesc1: "",
+
+            projectDate2: "1st April 2020",
+            projectSize2: "Group",
+            projectTitle2: "Weather App",
+            projectDesc2: "",
+
+            projectDate3: "1st March 2020",
+            projectSize3: "",
+            projectTitle3: "Movie App",
+            projectDesc3: "",
+
+            projectDate4: "23rd January 2020",
+            projectSize4: "Group",
+            projectTitle4: "Shop with Rest-API",
+            projectDesc4: "",
         }
     },
     sv: {
         strings: {
-            hi: "Hej",
-            intro: "Jag heter Bastian Dehlén och är student på Chas Academy - Fullstack Webbutvecklare",
-            about: "Jag har alltid varit intresserad av kod osv" 
+            hi: "Hejsan!",
+            intro: "Jag heter Bastian Dehlén och studerar Fullstack Webbutvecklare på Chas Academy i Stockholm.",
+            about: "Jag har alltid varit intresserad av kod osv",
+
+            skillsIntro: "",
+            skillsExp: "ERFARENHET AV:",
+
+            languages: "SPRÅK",
+            frameworks: "RAMVERK",
+            tools: "VERKTYG",
+
+            projectHeader: "PROJEKT:",
+            projectInProgress: "picture overlay goes here",
+
+            projectDate1: "5te Maj 2020",
+            projectSize1: "Grupp",
+            projectTitle1: "Mötesplats för utvecklare",
+            projectDesc1: "",
+
+            projectDate2: "1a April 2020",
+            projectSize2: "Grupp",
+            projectTitle2: "Väderapplikaton",
+            projectDesc2: "",
+
+            projectDate3: "1a Mars 2020",
+            projectSize3: "",
+            projectTitle3: "Filmapplikation",
+            projectDesc3: "",
+
+            projectDate4: "23dje Januari 2020",
+            projectSize4: "Grupp",
+            projectTitle4: "Butik med Rest-API",
+            projectDesc4: "",
         }
-    }
+        }
     }
 
     let langLocalStorage = localStorage.getItem("lang");
@@ -21,15 +81,15 @@ const langData = {
     
     //Check localStorage on init
     if (langLocalStorage === "en") {
-        localStorage.setItem("lang", "In Swedish");
+        localStorage.setItem("lang", "en");
     
         if(langToggle.checked === false) {
             langToggle.click();
-            langSpan.textContent = "In English";
+            langSpan.textContent = "In Swedish";
         } 
     } else {
         localStorage.setItem('lang', 'sv')
-        langSpan.textContent = "In English";
+        langSpan.textContent = "På Engelska";
     }
     
 
@@ -41,7 +101,7 @@ const langData = {
             langSpan.textContent = "In Swedish";
         } else {
             localStorage.setItem("lang", "sv");
-            langSpan.textContent = "In English";
+            langSpan.textContent = "På Engelska";
         }
         setLocale();
     })
