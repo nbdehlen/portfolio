@@ -70,6 +70,16 @@ li {
     fill: var(--foreground);
 }
 
+.grey-text-p {
+    color: grey;
+    padding: 0 3rem;
+}
+
+.inline {
+    display: inline;
+    
+}
+
 /* .menu-container {
     display: flex;
     justify-content: flex-end;
@@ -124,7 +134,8 @@ li {
 
 
 .exp-h2 {
-    color: #5baaff;
+    /* color: #5baaff; */
+    color: #007bff;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-top: 3rem;
@@ -155,6 +166,8 @@ margin-bottom: 20px;
 }
 
 .image-container {
+    display: flex;
+    justify-content: center;
     max-width: 500px;
     max-height: 300px;
     /* padding-left: 2rem; */
@@ -162,12 +175,10 @@ margin-bottom: 20px;
     min-width: 350px;
     margin-top: 3rem;
     filter: grayscale(100%);
-   
 }
 
 .image-container:hover {
-    display: flex;
-    justify-content: center;
+    
     filter: grayscale(0);
     transition: ease-in-out;
     transition-duration: 0.4s;
@@ -182,6 +193,16 @@ margin-bottom: 20px;
 .project-container {
 
 }
+
+.project-h2 {
+        /* color: #5baaff; */
+    color: #007bff;
+        /* margin-bottom: 1rem; */
+        margin-left: 1rem;
+        margin-top: 3rem;
+        font-size: 1rem;
+    }
+
 
 .project-section {
     display: flex;
@@ -220,9 +241,7 @@ margin-bottom: 20px;
    
 }
 
-.project-article:nth-child(1) {
-    margin: 0 1rem 1rem 1rem;
-}
+
 
 .divider {
     border: black;
@@ -297,12 +316,14 @@ padding: 10px;
         /* text-decoration: none; */
         padding: 4px;
         /* margin: 15px 3px; */
-        margin: 3px;
+        margin: 5px;
         border-radius: 5px;
         /* color: var(--clr-light); */
         /* background-color: var(--alt-color-2); */
-        border: 1px solid #5baaff;
-        color: #5baaff;
+        /* border: 1px solid #5baaff; */
+        /* color: #5baaff; */
+        border: 1px solid #007bff;
+        color: #007bff;
 
  }
 
@@ -370,11 +391,11 @@ padding: 10px;
 }
 
 
-@media only screen and (max-width: 866px) {
-    .project-section {
-        
+/* @media only screen and (max-width: 863px) {
+    .project-article:nth-child(1) {
+        margin: 0 1rem 1rem 1rem;
     }
-}
+} */
 
 @media only screen and (max-width: 541px) {
     #profile-image {

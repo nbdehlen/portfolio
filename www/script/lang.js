@@ -2,7 +2,8 @@ const langData = {
     en: {
         strings: {
             hi: "Hello!",
-            intro: "I'm Bastian Dehlén, a Fullstack Web developer student at Chas Academy in Stockholm.",
+            introStart: "I'm ",
+            introEnd: ", a Fullstack Web developer student at Chas Academy in Stockholm.",
             about: "I've always liked coding and so on",
 
             skillsIntro: "I'm a believer in the right tools for the job and am always up for learning new tech-related skills or improve the ones I'm already familiar with.",
@@ -11,7 +12,7 @@ const langData = {
             languages: "LANGUAGES",
             frameworks: "FRAMEWORKS",
             tools: "TOOLS",
-
+        
             projectHeader: "PROJECTS:",
             projectInProgress: "picture overlay goes here",
 
@@ -39,10 +40,12 @@ const langData = {
     sv: {
         strings: {
             hi: "Hejsan!",
-            intro: "Jag heter Bastian Dehlén och studerar Fullstack Webbutvecklare på Chas Academy i Stockholm.",
+            introStart: "Jag heter ",
+            introEnd: " och studerar Fullstack Webbutvecklare på Chas Academy i Stockholm.",
+
             about: "Jag har alltid varit intresserad av kod osv",
 
-            skillsIntro: "",
+            skillsIntro: "Jag tror på rätt verktyg för jobbet och är alltid nyfiken på att lära mig nya färdigheter eller förbättra de jag redan har erfarenhet av.",
             skillsExp: "ERFARENHET AV:",
 
             languages: "SPRÅK",
