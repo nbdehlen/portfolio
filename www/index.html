@@ -8,10 +8,8 @@
         <link rel="stylesheet" href="style/style.css" />
         <link rel="stylesheet" href="style/switch.css" />
         <link rel="stylesheet" href="style/lang.css" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
-        />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+       
         <title>B</title>
     </head>
     <body>
@@ -38,7 +36,7 @@
                 <span class="slider round"></span>
             </label>
 
-            <svg
+            <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="18"
                 viewBox="0 0 24 24"
@@ -49,14 +47,20 @@
                     class="theme-fill"
                     d="M10 4c4.41 0 8 3.59 8 8s-3.59 8-8 8c-.34 0-.68-.02-1.01-.07C10.9 17.77 12 14.95 12 12s-1.1-5.77-3.01-7.93C9.32 4.02 9.66 4 10 4m0-2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z"
                 />
+            </svg> -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" class="theme-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
             </svg>
+
         </div>
         <div class="container">
-            <section class="about-container theme-text">
+            <section class="about-container theme-text fade">
                 <div class="about-text">
                     <div lang="en">
-                        <header>
-                            <h1 data-key="hi" class="hello">Hello</h1>
+                        <header class="hello-header">
+                            <h1 data-key="hi" class="hello inline">Hello</h1>
+                            <img src="./assets/wave.png" alt="waving hand" id="wave">
                         </header>
                        
 
@@ -64,14 +68,15 @@
                             I'm Bastian Dehlén, a Fullstack Web developer
                             student at Chas Academy in Stockholm.
                         </p>
-                        <p class="inline"><strong>Bastian Dehlén</strong></p>
+                        <p class="inline"><strong>Bastian Dehlén</strong>,</p>
                         <p data-key="introEnd" class="inline"></p>
                         
                     </div>
 
                     <div lang="sv">
-                        <header>
-                            <h1 data-key="hi" class="hello">Hello</h1>
+                        <header class="hello-header">
+                            <h1 data-key="hi" class="hello inline">Hello</h1>
+                            <img src="./assets/wave.png" alt="waving hand" id="wave">
                         </header>
                         <p data-key="introStart" class="inline">
                             I'm Bastian Dehlén, a Fullstack Web developer
@@ -89,18 +94,26 @@
                         alt="profile"
                     />
                 </div>
+
+                <div class="bottom-arrow">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="#007bff" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg>  -->
+                    <a href="#content" id="down-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#007bff" width="48" height="48" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 12l-4-4h8l-4 4z"/></svg> 
+                    </a>
+                </div>
+
             </section>
 
             <div lang="en">
-                <h2 data-key="skillsExp" class="exp-h2">Experience with:</h2>
+                <h2 data-key="skillsExp" class="exp-h2 fade" id="content">Experience with:</h2>
             </div>
 
             <div lang="sv">
-                <h2 data-key="skillsExp" class="exp-h2">Experience with:</h2>
+                <h2 data-key="skillsExp" class="exp-h2 fade" id="content">Experience with:</h2>
             </div>
 
             <section class="skills">
-                <article class="skills-article">
+                <article class="skills-article fade">
                     <div lang="en">
                         <header class="theme-text">
                             <h2 data-key="languages">LANGUAGES</h2>
@@ -122,7 +135,7 @@
                     </ul>
                 </article>
 
-                <article class="skills-article">
+                <article class="skills-article fade">
                     <div lang="en">
                         <header class="theme-text">
                             <h2 data-key="frameworks">FRAMEWORKS</h2>
@@ -145,7 +158,7 @@
                     </ul>
                 </article>
 
-                <article class="skills-article">
+                <article class="skills-article fade">
                     <div lang="en">
                         <header class="theme-text">
                             <h2 data-key="tools">TOOLS</h2>
@@ -167,7 +180,7 @@
                     </ul>
                 </article>
 
-                <article class="skills-article">
+                <article class="skills-article fade">
                     <header class="theme-text">
                         <h2>UI/UX</h2>
                     </header>
@@ -185,14 +198,14 @@
             </section>
 
             <div lang="en">
-                <p data-key="skillsIntro" class="grey-text-p">
+                <p data-key="skillsIntro" class="grey-text-p fade">
                     I'm a believer in the right tools for the job and am always
                     up for learning new tech-related skills or improve the ones
                     I'm already familiar with.
                 </p>
             </div>
             <div lang="sv">
-                <p data-key="skillsIntro" class="grey-text-p">
+                <p data-key="skillsIntro" class="grey-text-p fade">
                     I'm a believer in the right tools for the job and am always
                     up for learning new tech-related skills or improve the ones
                     I'm already familiar with.
@@ -200,15 +213,15 @@
             </div>
 
             <div lang="en">
-                <h2 data-key="projectHeader" class="exp-h2">Projects</h2>
+                <h2 data-key="projectHeader" class="exp-h2 fade">Projects</h2>
             </div>
             <div lang="sv">
-                <h2 data-key="projectHeader" class="exp-h2">Projects</h2>
+                <h2 data-key="projectHeader" class="exp-h2 fade">Projects</h2>
             </div>
 
             <div class="project-container">
                 <section class="project-section theme-text">
-                    <article class="project-article">
+                    <article class="project-article fade" id="project-article-1">
                         <div id="project-image-1" class="project-image"></div>
                         <hr class="divider" />
                         <div class="project-bottom-container">
@@ -247,7 +260,8 @@
                                     </p>
                                 </div>
                             </div>
-
+                            <div class="project-text-container">
+                                
                             <div lang="en">
                                 <h4
                                     class="project-header"
@@ -265,6 +279,7 @@
                                     Shop with Rest-API
                                 </h4>
                             </div>
+                        </div>
 
                             <div class="project-tech-container">
                                 <p class="project-tech">React</p>
@@ -325,11 +340,13 @@
                                         </g>
                                     </svg>
                                 </a>
-                            </div>
                         </div>
+
+                        </div>
+ 
                     </article>
 
-                    <article class="project-article">
+                    <article class="project-article fade" id="project-article-2">
                         <div id="project-image-2" class="project-image"></div>
                         <hr class="divider" />
                         <div class="project-bottom-container">
@@ -392,22 +409,33 @@
                                 <p class="project-tech">TypeScript</p>
                                 <p class="project-tech">Tailwind</p>
                             </div>
-
+                            
+                            <div class="project-text-container">
+                                
                             <div lang="en">
-                                <p class="article-text" data-key="projectDesc2">
-                                    Issues I ran into and how I solved them: We
-                                    had issues setting up Sequelize lorem ipsum
-                                    whatever blabla
-                                </p>
+                                
+                                <div class="read-more-2 read-more-container">
+                                <h3 class="article-text" data-key="projectIssueTitle">
+                                    Issues I ran into and how I solved them: 
+                                </h3>
+                                <p data-key="projectProblem2"></p>
+                                <h3 class="article-text" data-key="projectSolutionTitle"></h3>
+                                <p data-key="projectSolution2"></p>
+
+                                <div class="text-shadow"> </div>
+                                </div>
                             </div>
+                        
 
                             <div lang="sv">
-                                <p class="article-text" data-key="projectDesc2">
-                                    Issues I ran into and how I solved them: We
-                                    had issues setting up Sequelize lorem ipsum
-                                    whatever blabla
-                                </p>
+                                <h3 class="article-text" data-key="projectIssueTitle">
+                                    Issues I ran into and how I solved them: 
+                                </h3>
+                                <p data-key="projectProblem2"></p>
+                                <h3 class="article-text" data-key="projectSolutionTitle"></h3>
+                                <p data-key="projectSolution2"></p>
                             </div>
+                        </div>
 
                             <div class="project-link-container">
                                 <!-- <a href="#" class="project-link">Live version</a>
@@ -443,11 +471,13 @@
                                         </g>
                                     </svg>
                                 </a>
-                            </div>
                         </div>
+
+                        </div>
+                     
                     </article>
 
-                    <article class="project-article">
+                    <article class="project-article fade" id="project-article-3">
                         <div id="project-image-3" class="project-image"></div>
                         <hr class="divider" />
                         <div class="project-bottom-container">
@@ -563,7 +593,7 @@
                         </div>
                     </article>
 
-                    <article class="project-article">
+                    <article class="project-article fade"  id="project-article-4">
                         <div id="project-image-4" class="project-image"></div>
                         <hr class="divider" />
                         <div class="project-bottom-container">
@@ -683,8 +713,10 @@
                 </section>
             </div>
         </div>
-        <script type="text/javascript" src="./script/main.js" type></script>
-        <script type="text/javascript" src="./script/darkmode.js" type></script>
-        <script type="text/javascript" src="./script/lang.js" type></script>
+        <script type="text/javascript" src="/node_modules/readmore-js/readmore.min.js"></script>
+        <script type="text/javascript" src="./script/darkmode.js"></script>
+        <script type="text/javascript" src="./script/lang.js"></script>
+        <script type="text/javascript" src="./script/main.js"></script>
+       
     </body>
 </html>

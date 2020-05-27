@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "www/main.js",
-  "dependencies": {},
+  "dependencies": {
+    "readmore-js": "^2.2.1"
+  },
   "devDependencies": {
     "prettier": "2.0.5"
   },

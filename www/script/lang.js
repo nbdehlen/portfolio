@@ -3,7 +3,7 @@ const langData = {
         strings: {
             hi: "Hello!",
             introStart: "I'm ",
-            introEnd: ", a Fullstack Web developer student at Chas Academy in Stockholm.",
+            introEnd: "a Fullstack Web developer student at Chas Academy in Stockholm.",
             about: "I've always liked coding and so on",
 
             skillsIntro: "I'm a believer in the right tools for the job and am always up for learning new tech-related skills or improve the ones I'm already familiar with.",
@@ -15,26 +15,37 @@ const langData = {
         
             projectHeader: "PROJECTS:",
             projectInProgress: "picture overlay goes here",
+            projectIssueTitle: "Issues I ran into:",
+            projectSolutionTitle: "How I solved them:",
 
             projectDate1: "5th May 2020",
             projectSize1: "Group",
             projectTitle1: "Meetingplace for developers",
-            projectDesc1: "",
+            projectProblem1: "",
+            projectSolution1: "",
+
+            readMore: "Read more",
 
             projectDate2: "1st April 2020",
             projectSize2: "Group",
             projectTitle2: "Weather App",
-            projectDesc2: "",
-
+            projectProblem2: "I wanted to graph 3 hour temperature forecasts together with the daily highs and lows gathered \
+            from the 3 hour data. In order for Chart.js to display stacked charts correctly both data sources needed to be the same length \
+            in total and match amount of data points per date.",
+            projectSolution2: "My teammate had created a function for another purpose where he took out the \
+            highs and low for each day. I modified it to loop over all data points in each day, find the daily high and low value for that day then for each data \
+            point per day push that high and low value to new arrays to match the 3 hour forecast data points per date.",
             projectDate3: "1st March 2020",
             projectSize3: "",
             projectTitle3: "Movie App",
-            projectDesc3: "",
+            projectProblem3: "",
+            projectSolution3: "",
 
             projectDate4: "23rd January 2020",
             projectSize4: "Group",
             projectTitle4: "Shop with Rest-API",
-            projectDesc4: "",
+            projectProblem4: "",
+            projectSolution4: "",
         }
     },
     sv: {
@@ -54,26 +65,32 @@ const langData = {
 
             projectHeader: "PROJEKT:",
             projectInProgress: "picture overlay goes here",
+            projectIssueTitle: "Problem jag sprang in i:",
+            projectSolutionTitle: "Hur jag löste dom:",
 
             projectDate1: "5te Maj 2020",
             projectSize1: "Grupp",
             projectTitle1: "Mötesplats för utvecklare",
-            projectDesc1: "",
+            projectProblem1: "",
+            projectSolution1: "",
 
             projectDate2: "1a April 2020",
             projectSize2: "Grupp",
             projectTitle2: "Väderapplikaton",
-            projectDesc2: "",
+            projectProblem2: "",
+            projectSolution2: "",
 
             projectDate3: "1a Mars 2020",
             projectSize3: "",
             projectTitle3: "Filmapplikation",
-            projectDesc3: "",
+            projectProblem3: "",
+            projectSolution3: "",
 
             projectDate4: "23dje Januari 2020",
             projectSize4: "Grupp",
             projectTitle4: "Butik med Rest-API",
-            projectDesc4: "",
+            projectProblem4: "",
+            projectSolution4: "",
         }
         }
     }
@@ -85,6 +102,7 @@ const langData = {
     //Check localStorage on init
     if (langLocalStorage === "en") {
         localStorage.setItem("lang", "en");
+        document.documentElement.lang = "en";
     
         if(langToggle.checked === false) {
             langToggle.click();
@@ -93,6 +111,7 @@ const langData = {
     } else {
         localStorage.setItem('lang', 'sv')
         langSpan.textContent = "På Engelska";
+        document.documentElement.lang = "sv";
     }
     
 
@@ -102,16 +121,18 @@ const langData = {
         if (langLocalStorage !== "en") {
             localStorage.setItem("lang", "en");
             langSpan.textContent = "In Swedish";
+            document.documentElement.lang = "en";
         } else {
             localStorage.setItem("lang", "sv");
             langSpan.textContent = "På Engelska";
+            document.documentElement.lang = "sv";
         }
         setLocale();
     })
     
 const setLocale = () => {
     let zones = document.querySelectorAll('html [lang]');
-    console.log(zones);
+    // console.log(zones);
     
     applyStrings(zones);
 
@@ -129,7 +150,7 @@ const setLocale = () => {
 
     let container = document.querySelectorAll(`html [lang*=${lang}]`);
 
-    console.log(container);
+    // console.log(container);
     
     container.forEach(x => x.className = 'lang-match')
     //container.className = 'lang-match';
@@ -177,3 +198,4 @@ setLocale();
     
 //    return langMatch;
 // }
+const html = document.querySelector("html")
