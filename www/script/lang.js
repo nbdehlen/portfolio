@@ -20,7 +20,7 @@ const langData = {
 
             projectDate1: "5th May 2020",
             projectSize1: "Group",
-            projectTitle1: "Meetingplace for developers",
+            projectTitle1: "Meeting App for developers",
             projectProblem1: "",
             projectSolution1: "",
 
@@ -77,8 +77,12 @@ const langData = {
             projectDate2: "1a April 2020",
             projectSize2: "Grupp",
             projectTitle2: "Väderapplikaton",
-            projectProblem2: "",
-            projectSolution2: "",
+            projectProblem2: "Jag ville visualisera väderprognosens temperatur med 3 timmars mellanrum tillsammans med dagliga högsta och lägsta temperaturerna \
+            utvunna från 3-timmars data. För att få Chart.js att visa stackade grafer korrekt krävs det att båda datakällorna är samma längd \
+            samt samma antal av dagens högsta/lägsta som det finns 3-timmars datapunkter för det datumet.",
+            projectSolution2: "Min gruppkamrat hade skapat en funktion av en annan anledning för att ta ut högsta och lägsta temperaturerna\
+            per dag. Jag byggde på den genom att efter ha hittat högsta och lägsta temperaturerna, pusha dom till en ny array lika många gånger som det fanns \
+            3-timmars datapunkter per datum.",
 
             projectDate3: "1a Mars 2020",
             projectSize3: "",

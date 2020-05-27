@@ -8,6 +8,8 @@
     src: url("../assets/fonts/calibre-cufonfonts-webfont/CalibreLight.woff") format("woff");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     box-sizing: border-box;
     /* font-family: "Apercu", Fallback, sans-serif; */
@@ -24,13 +26,17 @@
     --clr-secondary: #ececec;
     --clr-tertiary: #ececec;
     --clr-accent: #ff7750;
-  
+    --clr-greyscale: #e4e4e4;
+    --clr-greyscale-2: #b7b7b7;
+
     --foreground: var(--clr-dark);
     --foreground-2: var(--clr-dark-2);
     --background: var(--clr-light);
     --alt-color: var(--clr-primary);
     --alt-color-2: var(--clr-secondary);
-    --alt-color-3: var(--clr-tertiary)
+    --alt-color-3: var(--clr-tertiary);
+    --greyscale: var(--clr-greyscale);
+    --greyscale-2: var(--clr-greyscale-2);
   }
 
   html {
@@ -51,13 +57,17 @@ body {
     --clr-secondary: #333;
     --clr-tertiary: #919191;
     --clr-accent: #ff7750;
+    --clr-greyscale: #323534;
+    --clr-greyscale-2: #4c4c4c;
 
     --foreground: var(--clr-light);
     --foreground-2: var(--clr-light-2);
     --background: var(--clr-dark);
     --alt-color: var(--clr-primary);
     --alt-color-2: var(--clr-secondary);
-    --alt-color-3: var(--clr-tertiary)
+    --alt-color-3: var(--clr-tertiary);
+    --greyscale: var(--clr-greyscale);
+    --greyscale-2: var(--clr-greyscale-2);
    
   }
 
@@ -188,6 +198,11 @@ margin-bottom: 40px;
 
 }
 
+#content {
+    margin-top: -3rem;
+    position: absolute;
+}
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -210,6 +225,14 @@ margin-bottom: 40px;
     width: auto;
   height: 100%;
   box-shadow: 0 0 9px 0 grey;
+}
+
+.in-progress {
+    z-index: 2;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../assets/inprogress.png');
+    opacity: 0.5;
 }
 
 .project-container {
@@ -246,7 +269,7 @@ margin-bottom: 40px;
      margin: 1rem;
      /* border-radius: 1rem; */
      text-align: flex-start;
-   box-shadow: 0 0 0.8rem var(--alt-color);
+   /* box-shadow: 0 0 0.8rem var(--alt-color); */
    color: var(--foreground-2);
    width: 800px;
    margin-bottom: 4rem;
@@ -273,11 +296,18 @@ margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     width: 500px;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+    box-shadow: 0 0 0.8rem var(--alt-color);
+    z-index: 2;
+    margin-left: -1rem;
+    margin-top: 1.3rem;
+    margin-bottom: -1rem;
+    background: var(--background);
+    border-radius: 10px;
 }
 
  .project-image {
-     padding: 0.3rem;
+     /* padding: 0.3rem; */
      /* width: 100%; */
      /* height: 300px; */
      display: flex;
@@ -285,7 +315,10 @@ margin-bottom: 40px;
     /* border-top-left-radius: 1rem; */
 
     height: 300px;
-    width: inherit;
+    /* width: inherit; */
+    width: 500px;
+    /* box-shadow: 0 0 0.8rem var(--alt-color); */
+    border-radius: 10px;
  }
 
  .project-image:hover {
@@ -320,13 +353,16 @@ padding: 10px;
 }
 
 .read-more-2 {
+    
 }
 
 .read-more-container {
     overflow: hidden; 
-    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    /* padding: 0.5rem 0.5rem 1rem 0.5rem; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
     margin-bottom: 0.5rem;
     position: relative;
+  
 }
 
 .read-more {
@@ -349,19 +385,29 @@ padding: 10px;
 }
 
  .project-tech {
-        font-size: 1.2rem;
-        font-weight: 500;
-        padding: 7px 4px 0px 4px;
+        /* font-size: 1.15rem; */
+        /* font-weight: 500; */
+        /* padding: 7px 4px 2px 4px; */
         margin: 5px;
         border-radius: 5px;
         line-height: 1.15rem;
-        color: grey;
-        border: 1px solid grey;
+        /* color: grey; */
+        /* border: 1px solid #969696; */
+
+        /* color: var(--background); */
+        /* font-weight: 700; */
+        /* background: #969696; */
+        /* background: #323534; */
+        background: var(--greyscale);
+        font-family: monospace;
+        padding: 3px;
+        font-size: 0.9rem;
+        border-bottom: 1px solid var(--greyscale-2);
 
  }
 
 .article-text {
-    padding: 0px 5px;
+    margin: 0.5rem 0 0.25rem 0;
 }
 
 .text-shadow {
