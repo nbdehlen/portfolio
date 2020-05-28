@@ -233,6 +233,7 @@ margin-bottom: 40px;
     background-size: cover;
     background-image: url('../assets/inprogress.png');
     opacity: 0.5;
+    border-radius: 10px;
 }
 
 .project-container {
@@ -371,7 +372,8 @@ padding: 10px;
     font-weight: 700;
     align-self: center;
     color: #007bff;
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
+    padding-left: 1rem;
 }
 
 .read-more:hover {
@@ -487,15 +489,23 @@ height: 100%;
       flex-direction: column;
       /* width: 300px; */
       width: 375px;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 0.9rem 0.9rem var(--alt-color);
   }
 
   .project-image {
-       width: inherit; 
+       width: inherit;
+       border-radius: 10px 10px 0 0;
+  }
+
+  .in-progress {
+    border-radius: 10px 10px 0 0;
   }
 
   .project-bottom-container {
       width: auto;
       margin-left: 0;
-     
+    border-radius: 0;
+    box-shadow: unset;
   }
 }
