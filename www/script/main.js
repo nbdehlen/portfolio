@@ -1,22 +1,6 @@
-//Need ternary for what language Read less etc
-function readMore() {
-$('.read-more-2').readmore({ speed: 75, lessLink: '<a href="#" class="read-more">Read less</a>',
-moreLink: '<a href="#" class="read-more">Read more</a>', collapsedHeight: 80, embedCSS: false,
-beforeToggle: function(trigger, element, expanded) {
-        if (!expanded) {
-            $('.read-more-2').css({maxHeight: '350px'});
-            $('.text-shadow').css({boxShadow: 'unset'})
-        } else {
-            $('.text-shadow').css({boxShadow: 'inset 0 -20px 20px -10px var(--background)'})
-        }
-}
-});
-}
-
 $(document).ready(function() {
     $('body').css('display', 'none');
     $('body').fadeIn(1500);
-    readMore();
 
 $('#down-button').click(function() {
 
@@ -61,6 +45,6 @@ $(window).on("load",function() {
         }
        });
     
-    readMore();
+    
     }).scroll(); //invoke scroll-handler on page-load
   });

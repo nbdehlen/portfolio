@@ -118,7 +118,6 @@ const langData = {
         document.documentElement.lang = "sv";
     }
     
-
     langToggle.addEventListener('click', () => {
         langLocalStorage = localStorage.getItem("lang");
     
@@ -126,41 +125,25 @@ const langData = {
             localStorage.setItem("lang", "en");
             langSpan.textContent = "In Swedish";
             document.documentElement.lang = "en";
+            
         } else {
             localStorage.setItem("lang", "sv");
             langSpan.textContent = "På Engelska";
             document.documentElement.lang = "sv";
+            
         }
         setLocale();
+        readMore();
     })
     
 const setLocale = () => {
     let zones = document.querySelectorAll('html [lang]');
-    // console.log(zones);
-    
     applyStrings(zones);
-
-    //let lang = findLocaleMatch();
-    //console.log(lang);
-
-    // Dirty fix for clearing class
-    // if (zones.classList.contains('lang-match')) {
-    //     zones.classList.remove('lang.match');
-    // }
     zones.forEach(x => {x.classList.contains('lang-match') ? x.classList.remove('lang-match') : null})
-
-
     let lang = localStorage.getItem('lang')
-
     let container = document.querySelectorAll(`html [lang*=${lang}]`);
-
-    // console.log(container);
-    
     container.forEach(x => x.className = 'lang-match')
-    //container.className = 'lang-match';
 }
-
-// document.addEventListener('DOMContentLoaded', setLocale)
 
 const applyStrings = (containers) => {
     containers.forEach(container => {
@@ -170,36 +153,30 @@ const applyStrings = (containers) => {
         
         container.querySelectorAll(`[data-key]`).forEach(element => {
             let key = element.getAttribute('data-key');
-           
-            
             let lang = locale.substr(0, 2);
-            //console.log(key);
             
             if (key) {
-                element.textContent = langData[lang].strings[key];
-               // console.log(element);
-                
+                element.textContent = langData[lang].strings[key];  
             }
         })
     })
 }
-
 setLocale();
-// const findLocaleMatch = () => {
-//    let keys = Object.keys(langData);
-//    let locales = Intl.getCanonicalLocales(keys);
+readMore();
+// const html = document.querySelector("html")
 
-//    let lang = navigator.language;
-//    let locale = Intl.getCanonicalLocales(lang);
-
-//    console.log('browser language', lang);
-//    console.log('locales from data file', locale);
-   
-//     let langMatch = document.documentElement.getAttribute('lang');
-//     locales = locales.filter(l => locale == l);
-//     langMatch = (locales.length > 0) ? locales[0] : langMatch;
-    
-    
-//    return langMatch;
-// }
-const html = document.querySelector("html")
+// Needed access to readMore function on language change
+//Need ternary for what language Read less etc
+function readMore() {
+    $('.read-more-2').readmore({ speed: 75, lessLink: '<a href="#" class="read-more">Read less</a>',
+    moreLink: '<a href="#" class="read-more">Read more</a>', collapsedHeight: 80, embedCSS: false,
+    beforeToggle: function(trigger, element, expanded) {
+            if (!expanded) {
+                $('.read-more-2').css({maxHeight: '350px'});
+                $('.text-shadow').css({boxShadow: 'unset'})
+            } else {
+                $('.text-shadow').css({boxShadow: 'inset 0 -20px 20px -10px var(--background)'})
+            }
+    }
+    });
+    }
