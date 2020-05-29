@@ -116,7 +116,7 @@ li {
 .grey-text-p {
     color: grey;
     padding: 0 2.78rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     font-size: 1.2rem;
 }
 
@@ -169,6 +169,22 @@ li {
     bottom: 2%;
 }
 
+.top-arrow {
+    position: sticky;
+    bottom: 2%;
+    left: 100%;
+    display: inline;
+    /* margin: 0 1rem 1rem 0; */
+    z-index: 5;
+    
+    
+}
+
+.svg-arrow {
+    border-radius: 50%;
+    background: var(--background);
+}
+
 .exp-h2 {
     color: #007bff;
     margin-bottom: 1rem;
@@ -185,9 +201,9 @@ padding: 0 2.78rem;
 }
 
 .skills-article {
-height: 200px;
+/* height: 200px; */
 width: 143px;
-margin-bottom: 40px;
+margin-bottom: 2rem;
 }
 
 .skills-article:last-child {
@@ -228,16 +244,24 @@ margin-bottom: 40px;
 }
 
 .in-progress {
-    z-index: 2;
+    /* z-index: 2;
     width: 100%;
     background-size: cover;
     background-image: url('../assets/inprogress.png');
     opacity: 0.5;
-    border-radius: 10px;
+    border-radius: 10px; */
+    font-weight: 700;
+    text-align: center;
+
 }
 
 .project-container {
     
+}
+
+.project-intro {
+    padding: 0 1rem;
+    text-align: center;
 }
 
 .project-h2 {
@@ -497,10 +521,10 @@ height: 100%;
        width: inherit;
        border-radius: 10px 10px 0 0;
   }
-
+/* 
   .in-progress {
     border-radius: 10px 10px 0 0;
-  }
+  } */
 
   .project-bottom-container {
       width: auto;
