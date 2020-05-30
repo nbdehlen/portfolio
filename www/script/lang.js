@@ -45,7 +45,7 @@ const langData = {
             projectProblem3: "",
             projectSolution3: "",
 
-            projectIntro4: "",
+            projectIntro4: "Diablo3 themed item shop.",
             projectDate4: "23rd January 2020",
             projectSize4: "Group",
             projectTitle4: "Shop with Rest-API",
@@ -99,7 +99,7 @@ const langData = {
             projectProblem3: "",
             projectSolution3: "",
 
-            projectIntro4: "",
+            projectIntro4: "Utrustningsbutik med tema från Diablo3.",
             projectDate4: "23dje Januari 2020",
             projectSize4: "Grupp",
             projectTitle4: "Butik med Rest-API",

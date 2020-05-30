@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+  const slick = ['#slick-1', '#slick-2', '#slick-3', '#slick-4'];
+    for (i = 0; i<slick.length; i++) {
+      $(slick[i]).slick({
+        fade: true,
+        cssEase: 'linear',
+        speed: 300
+      });
+    }
+    
+
     $('body').css('display', 'none');
     $('body').fadeIn(1500);
 

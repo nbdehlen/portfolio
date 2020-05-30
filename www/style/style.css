@@ -324,11 +324,12 @@ margin-bottom: 2rem;
     /* margin-left: 2rem; */
     box-shadow: 0 0 0.8rem var(--alt-color);
     z-index: 2;
-    margin-left: -1rem;
-    margin-top: 1.3rem;
-    margin-bottom: -1rem;
+    /* margin-left: -1rem; */
+    margin-top: 1.5rem;
+    margin-bottom: -1.5rem;
     background: var(--background);
     border-radius: 10px;
+    margin-left: 2.5rem;
 }
 
  .project-image {
@@ -341,7 +342,7 @@ margin-bottom: 2rem;
 
     height: 300px;
     /* width: inherit; */
-    width: 500px;
+    width: 375px;
     /* box-shadow: 0 0 0.8rem var(--alt-color); */
     border-radius: 10px;
  }

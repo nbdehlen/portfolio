@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="style/style.css" />
         <link rel="stylesheet" href="style/switch.css" />
         <link rel="stylesheet" href="style/lang.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <title>B</title>
     </head>
     <body>
@@ -243,8 +246,10 @@
                         class="project-article fade"
                         id="project-article-1"
                     >
-                        <div id="project-image-1" class="project-image"></div>
-                        <hr class="divider" />
+                    <div id="slick-1" class="project-image">
+                        <div id="project-image-1"></div>
+                        <div id="project-image-2"></div>
+                    </div>
                         <div class="project-bottom-container">
                             <div lang="en">
                                 <div class="project-info-container">
@@ -379,8 +384,10 @@
                         class="project-article fade"
                         id="project-article-2"
                     >
-                        <div id="project-image-2" class="project-image"></div>
-                        <hr class="divider" />
+                    <div id="slick-2" class="project-image">
+                        <div> <img src="https://radar.ozforecast.com.au/IDR55/IDR55-latest.jpg" class="project-image" alt=""> </div>
+                        <div> <img src="https://radar.ozforecast.com.au/IDR55/IDR55-latest.jpg" class="project-image" alt=""></div>
+                    </div>
                         <div class="project-bottom-container">
                             <div lang="en">
                                 <div class="project-info-container">
@@ -415,7 +422,7 @@
                                     </p>
                                 </div>
                             </div>
-
+                            <div class="project-text-container">
                             <div lang="en">
                                 <h4
                                     class="project-header"
@@ -435,6 +442,7 @@
                                 </h4>
                                 <p data-key="projectIntro2" class="project-intro"></p>
                             </div>
+                        </div>
 
                             <div class="project-tech-container">
                                 <p class="project-tech">React</p>
@@ -442,7 +450,6 @@
                                 <p class="project-tech">Tailwind</p>
                             </div>
 
-                            <div class="project-text-container">
                                 <div lang="en">
                                     <div
                                         class="read-more-2 read-more-container"
@@ -490,7 +497,7 @@
                                         <div class="text-shadow"></div>
                                     </div>
                                 </div>
-                            </div>
+                            
 
                             <div class="project-link-container">
                                 <!-- <a href="#" class="project-link">Live version</a>
@@ -542,7 +549,10 @@
                         class="project-article fade"
                         id="project-article-3"
                     >
-                        <div id="project-image-3" class="project-image"></div>
+                    <div id="slick-3" class="project-image">
+                        <div> <img src="https://radar.ozforecast.com.au/IDR55/IDR55-latest.jpg" class="project-image" alt=""> </div>
+                        <div> <img src="https://radar.ozforecast.com.au/IDR55/IDR55-latest.jpg" class="project-image" alt=""></div>
+                    </div>
                         <hr class="divider" />
                         <div class="project-bottom-container">
                             <div lang="en">
@@ -664,8 +674,10 @@
                     <article
                     class="project-article fade"
                     id="project-article-4">
-                    <div id="project-image-4" class="project-image"></div>
-                    <hr class="divider" />
+                    <div id="slick-4" class="project-image">
+                        <div> <img src="https://radar.ozforecast.com.au/IDR55/IDR55-latest.jpg" class="project-image" alt=""> </div>
+                        <div> <img src="https://radar.ozforecast.com.au/IDR55/IDR55-latest.jpg" class="project-image" alt=""></div>
+                    </div>
                     <div class="project-bottom-container">
                         <div lang="en">
                             <div class="project-info-container">
@@ -675,7 +687,6 @@
                                 >
                                     23rd January 2020
                                 </p>
-                                <!-- <p class="project-info">3 weeks</p> -->
                                 <p
                                     class="project-info"
                                     data-key="projectSize4"
@@ -693,7 +704,6 @@
                                 >
                                     5th May 2019
                                 </p>
-                                <!-- <p class="project-info">3 weeks</p> -->
                                 <p
                                     class="project-info"
                                     data-key="projectSize4"
@@ -702,7 +712,7 @@
                                 </p>
                             </div>
                         </div>
-
+                        <div class="project-text-container">
                         <div lang="en">
                             <h4
                                 class="project-header"
@@ -710,6 +720,7 @@
                             >
                                 Shop with Rest-API
                             </h4>
+                            <p data-key="projectIntro4" class="project-intro"></p>
                         </div>
 
                         <div lang="sv">
@@ -719,7 +730,9 @@
                             >
                                 Shop with Rest-API
                             </h4>
+                            <p data-key="projectIntro4" class="project-intro"></p>
                         </div>
+                    </div>
 
                         <div class="project-tech-container">
                             <p class="project-tech">Laravel</p>
@@ -728,7 +741,7 @@
                             <p class="project-tech">Bootstrap</p>
                         </div>
 
-                        <div class="project-text-container">
+                       
                             <div lang="en">
                                 <div
                                     class="read-more-2 read-more-container"
@@ -772,11 +785,8 @@
                                     <div class="text-shadow"></div>
                                 </div>
                             </div>
-                        </div>
-
+                        
                         <div class="project-link-container">
-                            <!-- <a href="#" class="project-link">Live version</a>
-                <a href="#" class="project-link">Github</a> -->
                             <a
                                 href="https://github.com/nbdehlen//Not-a-bookstore"
                                 target="new"
@@ -838,6 +848,8 @@
             type="text/javascript"
             src="/node_modules/readmore-js/readmore.min.js"
         ></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
         <script type="text/javascript" src="./script/darkmode.js"></script>
         <script type="text/javascript" src="./script/lang.js"></script>
         <script type="text/javascript" src="./script/main.js"></script>
