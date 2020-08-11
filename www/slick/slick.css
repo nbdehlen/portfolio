@@ -33,6 +33,14 @@
     width: 100%;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 830px) {
+.slick-list {
+    /* border-radius: 10px 10px 0px 0px; */
+    border-radius: 10px;
+}
+}
+
 .slick-list:focus
 {
     outline: none;

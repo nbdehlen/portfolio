@@ -174,7 +174,6 @@ const applyStrings = (containers) => {
 }
 setLocale();
 readMore();
-// const html = document.querySelector("html")
 
 // Needed access to readMore function on language change
 //Need ternary for what language Read less etc
