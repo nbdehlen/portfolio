@@ -1,4 +1,5 @@
-assets/
+assets-ignore/
 design/
 node_modules/
 text.txt
+.vscode/
