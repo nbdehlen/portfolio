@@ -199,7 +199,7 @@ li {
 
 .exp-h2 {
     color: #007bff;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-left: 1rem;
     margin-top: 5rem;
     font-size: 1.2rem;
@@ -216,6 +216,7 @@ padding: 0 2.78rem;
 /* height: 200px; */
 width: 143px;
 margin-bottom: 2rem;
+line-height: 1.6rem;
 }
 
 .skills-article:last-child {
@@ -500,7 +501,7 @@ height: 100%;
 
 @media only screen and (max-width: 600px) {
     .about-container {
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
     .image-container {
         margin-top: 1.5rem;

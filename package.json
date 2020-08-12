@@ -1,20 +1,18 @@
 {
-  "homepage": "http://nbdehlen.github.io/portfolio",
+  "homepage": "https://nbdehlen.github.io/portfolio",
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "www/main.js",
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "readmore-js": "^2.2.1"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
     "prettier": "2.0.5"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d www"
   },
   "author": "",
   "license": "ISC"

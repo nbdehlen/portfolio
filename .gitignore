@@ -1,4 +1,5 @@
+node_modules/
 assets-ignore/
 design/
-text.txt
 .vscode/
+text.txt
