@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const slick = ["#slick-1", "#slick-2", "#slick-3", "#slick-4"];
+    const slick = ["#slick-1", "#slick-2", "#slick-3", "#slick-4", "#slick-5"];
     for (i = 0; i < slick.length; i++) {
         $(slick[i]).slick({
             // fade: true,

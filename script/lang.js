@@ -3,34 +3,36 @@ const langData = {
         strings: {
             hi: "Hello!",
             introStart: "I'm ",
-            introEnd: "a Fullstack Web developer student at Chas Academy in Stockholm.",
+            introEnd: "a full-stack web developer student at Chas Academy in Stockholm.",
             about: "I've always liked coding and so on",
 
             skillsIntro: "I'm a believer in the right tools for the job and am always up for learning new tech-related skills or improve the ones I'm already familiar with.",
-            skillsExp: "EXPERIENCE WITH:",
+            skillsExp: "EXPERIENCE WITH",
 
             languages: "LANGUAGES",
             frameworks: "FRAMEWORKS",
             tools: "TOOLS",
         
-            projectHeader: "PROJECTS:",
+            projectHeader: "PROJECTS",
             projectInProgress: "(In progress)",
             projectIssueTitle: "Issues I ran into:",
             projectSolutionTitle: "How I solved them:",
+            inProgress: "Group assignment in progress.",
+            group: "Group assignment.",
 
             projectIntro1: "Chat, swipe and match with other developers.",
-            projectDate1: "5th May 2020",
+            projectDate1: "5 May 2020",
             projectSize1: "Group",
-            projectTitle1: "Meeting App for developers",
+            projectTitle1: "Developer meeting app",
             projectProblem1: "",
             projectSolution1: "",
 
             readMore: "Read more",
 
             projectIntro2: "Search locations or use geolocation with OpenWeatherMaps API.",
-            projectDate2: "1st April 2020",
+            projectDate2: "1 Apr 2020",
             projectSize2: "Group",
-            projectTitle2: "Weather Forecast",
+            projectTitle2: "Weather forecast",
             projectProblem2: "We wanted to graph 3 hour temperature forecasts together with the daily highs and lows gathered \
             from the 3 hour data. In order for Chart.js to display stacked charts correctly both data sources needed to be the same length \
             in total and match amount of data points per date.",
@@ -38,51 +40,60 @@ const langData = {
             highs and low for each day. I modified it to loop over all data points in each day, find the daily high and low value for that day then for each data \
             point per day push that high and low value to new arrays to match the 3 hour forecast data points per date.",
             
-            projectIntro3: "",
-            projectDate3: "1st March 2020",
+            projectIntro3: "See current top movies or search for movies, series or actors using TMDbs API.",
+            projectDate3: "1 Mar 2020",
             projectSize3: "",
-            projectTitle3: "Movie App",
+            projectTitle3: "Movie app",
             projectProblem3: "",
             projectSolution3: "",
 
             projectIntro4: "Diablo3 themed item shop.",
-            projectDate4: "23rd January 2020",
+            projectDate4: "23 Jan 2020",
             projectSize4: "Group",
-            projectTitle4: "Shop with Rest-API",
+            projectTitle4: "Shop with rest-API",
             projectProblem4: "We wanted to update search results from the item database as you type and be able to add items to the cart from those results.",
             projectSolution4: "Unfortunetly we couldn't find a way around Laravel not being able to deal with multiple ajax requests \
             and ended up scrapping the idea in order to meet the deadline.",
+
+            projectIntro5: "Backend for car rental with validation for swedish registration plates, personal number and phone numbers.",
+            projectDate5: "17 Dec 2019",
+            projectSize5: "",
+            projectTitle5: "Car rental shop",
+            projectProblem5: "",
+            projectSolution5: ""
         }
     },
     sv: {
         strings: {
             hi: "Hejsan!",
             introStart: "Jag heter ",
-            introEnd: " och studerar Fullstack Webbutvecklare på Chas Academy i Stockholm.",
+            introEnd: " och studerar fullstack webbutveckling på Chas Academy i Stockholm.",
 
             about: "Jag har alltid varit intresserad av kod osv",
 
             skillsIntro: "Jag tror på rätt verktyg för jobbet och är alltid nyfiken på att lära mig nya färdigheter eller förbättra de jag redan har erfarenhet av.",
-            skillsExp: "ERFARENHET AV:",
+            skillsExp: "ERFARENHET AV",
 
             languages: "SPRÅK",
             frameworks: "RAMVERK",
             tools: "VERKTYG",
 
-            projectHeader: "PROJEKT:",
+            projectHeader: "PROJEKT",
             projectInProgress: "(Under utveckling)",
             projectIssueTitle: "Problem jag sprang in i:",
             projectSolutionTitle: "Hur jag löste dom:",
+            inProgress: "Pågående gruppuppgift",
+            group: "Gruppuppgift.",
 
             projectIntro1: "Chatta, swipa och matcha med andra utvecklare.",
-            projectDate1: "5te Maj 2020",
+            projectDate1: "5 Maj 2020",
             projectSize1: "Grupp",
             projectTitle1: "Mötesplats för utvecklare",
             projectProblem1: "",
             projectSolution1: "",
 
             projectIntro2: "Sök plats eller använd geolocation med OpenWeatherMaps API",
-            projectDate2: "1a April 2020",
+            projectDate2: "1 Apr 2020",
             projectSize2: "Grupp",
             projectTitle2: "Väderprognos",
             projectProblem2: "Jag ville visualisera väderprognosens temperatur med 3 timmars mellanrum tillsammans med dagliga högsta och lägsta temperaturerna \
@@ -92,20 +103,27 @@ const langData = {
             per dag. Jag byggde på den genom att efter ha hittat högsta och lägsta temperaturerna, pusha dom till en ny array lika många gånger som det fanns \
             3-timmars datapunkter per datum.",
 
-            projectIntro3: "",
-            projectDate3: "1a Mars 2020",
+            projectIntro3: "Se topplistor eller sök efter filmer, serier och personer med hjälp av TMDbs API.",
+            projectDate3: "1 Mar 2020",
             projectSize3: "",
             projectTitle3: "Filmapplikation",
             projectProblem3: "",
             projectSolution3: "",
 
             projectIntro4: "Utrustningsbutik med tema från Diablo3.",
-            projectDate4: "23dje Januari 2020",
+            projectDate4: "23 Jan 2020",
             projectSize4: "Grupp",
-            projectTitle4: "Butik med Rest-API",
+            projectTitle4: "Butik med rest-API",
             projectProblem4: "Vi ville uppdatera sökresultaten i realtid från databasen samt kunna lägga till varor från de sökresultaten.",
             projectSolution4: "Tyvärr kunde vi inte hitta ett sätt runt att Laravel inte spelade snällt med flera ajax requests samtidigt \
             och det slutade med att vi la idén på is för att kunna slutföra projektet i tid.",
+
+            projectIntro5: "Backend för biluthyrningsbutik med validering för svenska registreringsskyltar, personnummer och telefonnummer.",
+            projectDate5: "17 Dec 2019",
+            projectSize5: "",
+            projectTitle5: "Biluthyrning",
+            projectProblem5: "",
+            projectSolution5: "",
         }
         }
     }
